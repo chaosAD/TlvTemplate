@@ -18,6 +18,6 @@ void commSendByte(int8_t byteToSend);
  * This is hardware implementation of your byte reception function.
  * The communication device can be USB, UART, Ethernet, etc...
  */
-int8_t commSendByte(void);
+int8_t commGetByte(void);
 
 #endif   // COMM_H_

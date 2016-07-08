@@ -1,11 +1,11 @@
 #include "Tlv.h"
 
-void yourStateMachineToHandleFlashing(YourStateMachine *sm);
+void yourStateMachineToHandleMcuFlashing(YourStateMachine *sm);
 
 int main(void) {
   YourStateMachine sm = { ...initialization data... };
 
-  // Initialize TLV mecahnism and USB/UART/USART device
+  // Initialize TLV mechanism and USB/UART/USART device
   tlvInit();
 
   while(1) {
@@ -20,5 +20,5 @@ int main(void) {
 void yourStateMachineToHandleMcuFlashing(YourStateMachine *sm) {
   // ...this function will send TLV packet by calling tlvSendPacket()
 
-  // ...and also receive TLV packet by calling tlvReceivePacket()
+  // ...and also receive TLV packet by calling tlvGetPacket()
 }
