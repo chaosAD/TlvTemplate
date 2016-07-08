@@ -74,6 +74,7 @@ TlvPacket *tlvGetPacket(void) {
  */
 void tlvHandlePacketSending(TlvPacketSendingObject *obj) {
   // ...the state machine implementatiton here...
+  // ...this function will call hardwareSendByte()
 }
 
 /**
@@ -83,4 +84,5 @@ void tlvHandlePacketSending(TlvPacketSendingObject *obj) {
  */
 void tlvHandlePacketReception(TlvPacketReceivingObject *obj) {
   // ...the state machine implementatiton here...
+  // ...this function will call hardwareReceiveByte()
 }

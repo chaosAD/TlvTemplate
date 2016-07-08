@@ -1,6 +1,8 @@
 #ifndef TLV_H_
 #define TLV_H_
 
+#include <stdint.h>
+
 typedef struct TlvPacket TlvPacket;
 struct TlvPacket {
   uint8_t type;
@@ -31,4 +33,4 @@ void tlvInit(void);
  */
 void tlvRunService(void);
 
-#end if   // TLV_H_
+#endif   // TLV_H_
